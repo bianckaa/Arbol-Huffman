@@ -1,19 +1,24 @@
-public class HuffmanNode  implements Comparable<HuffmanNode> {
-    char character;
-    int frequency;
-    HuffmanNode  left, right;
+/**
+ * Referencia:
+ * - https://www.wscubetech.com/resources/dsa/huffman-code
+ */
 
-    public HuffmanNode (char character, int frequency) {
-        this.character = character;
-        this.frequency = frequency;
-        this.left = this.right = null;
+public class HuffmanNode  implements Comparable<HuffmanNode> {
+    char caracter;
+    int frecuencia;
+    HuffmanNode izquierda, derecha;
+
+    public HuffmanNode (char caracter, int frecuencia) {
+        this.caracter = caracter;
+        this.frecuencia = frecuencia;
+        this.izquierda = this.derecha = null;
     }
 
-    public boolean isSheet() {
-        return left == null && right == null;
+    public boolean isLeaf() {
+        return izquierda == null && derecha == null;
     }
 
     public int compareTo(HuffmanNode  otro) {
-        return this.frequency - otro.frequency;
+        return this.frecuencia - otro.frecuencia;
     }
 }
