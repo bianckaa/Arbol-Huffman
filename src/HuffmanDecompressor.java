@@ -2,6 +2,13 @@ import java.io.*;
 import java.util.*;
 
 public class HuffmanDecompressor {
+    /**
+     * Descomprime el archivo codificado y recupera el texto original.
+     *
+     * @param rutaEntrada  Ruta del archivo comprimido
+     * @param rutaSalida   Ruta del archivo descomprimido
+     * @throws IOException Si ocurre un error
+     */
     public void descomprimir(String rutaEntrada, String rutaSalida) throws IOException {
         BufferedReader lector = new BufferedReader(new FileReader(rutaEntrada));
         Map<Character, Integer> frecuencias = new HashMap<>();
@@ -27,6 +34,12 @@ public class HuffmanDecompressor {
         escritor.close();
     }
 
+    /**
+     * Construye el árbol de Huffman con las frecuencias.
+     *
+     * @param frecuencias Mapa de frecuencias
+     * @return Nodo raíz
+     */
     private HuffmanNode construirArbol(Map<Character, Integer> frecuencias) {
         PriorityQueue<HuffmanNode> cola = new PriorityQueue<>();
         for (Map.Entry<Character, Integer> entrada : frecuencias.entrySet()) {
@@ -40,11 +53,16 @@ public class HuffmanDecompressor {
             combinado.izquierda = nodo1;
             combinado.derecha = nodo2;
             cola.add(combinado);
-        }
-
-        return cola.poll();
+        } return cola.poll();
     }
 
+    /**
+     * Decodifica el texto binario a texto original usando el árbol.
+     *
+     * @param datosBinarios Cadena de bits
+     * @param raiz Árbol de Huffman
+     * @return Texto original
+     */
     private String decodificarTexto(String binario, HuffmanNode raiz) {
         StringBuilder texto = new StringBuilder();
         HuffmanNode actual = raiz;
