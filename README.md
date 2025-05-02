@@ -7,5 +7,5 @@
 🔗 [https://youtu.be/Gt-htAuVg7Y](https://youtu.be/Gt-htAuVg7Y)
 
 ---
-👩‍💻 Integrantes
+## 👩‍💻 Integrantes
 Este proyecto fue desarrollado de forma individual.
