@@ -1,6 +1,13 @@
 /**
+ * Universidad del Valle de Guatemala
+ * Algoritmos y Estructuras de Datos - Seccion 31
+ * Arbol de Huffman
+ * Biancka Raxón (24960)
  * 
- */
+ * Clase: HuffmanCompressor.java
+ * Clase que comprime un archivo de texto usando codificación Huffman.
+ * 
+*/
 
 import java.io.*;
 import java.util.*;

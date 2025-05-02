@@ -1,9 +1,16 @@
 /**
+ * Universidad del Valle de Guatemala
+ * Algoritmos y Estructuras de Datos - Seccion 31
+ * Arbol de Huffman
+ * Biancka Raxón (24960)
+ * 
+ * Clase: HuffmanNode.java
+ * Clase que representa un nodo del árbol de Huffman.
+ * 
  * Referencia:
  * - https://www.wscubetech.com/resources/dsa/huffman-code
  * 
- * Representa un nodo del árbol de Huffman.
- */
+*/
 
 public class HuffmanNode  implements Comparable<HuffmanNode> {
     char caracter;

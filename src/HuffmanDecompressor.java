@@ -1,3 +1,14 @@
+/**
+ * Universidad del Valle de Guatemala
+ * Algoritmos y Estructuras de Datos - Seccion 31
+ * Arbol de Huffman
+ * Biancka Raxón (24960)
+ * 
+ * Clase: HuffmanDecompressor.java
+ * Clase que descomprime un archivo comprimido con Huffman.
+ * 
+*/
+
 import java.io.*;
 import java.util.*;
 
